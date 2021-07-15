@@ -16,6 +16,7 @@ for i in range(y):
             pre_tomato.append(0)
 
 
+
 if not pre_tomato:
     print(0)
 else:
