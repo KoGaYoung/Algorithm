@@ -3,7 +3,7 @@
 s = input()
 s += ' '    # 원본 문자열에 공백 추가
 s1 = ''     # 앞에 0을 없앤 계산식
-buffer = '' # 임시 숫자 버퍼
+buffer = ''  # 임시 숫자 버퍼
 for ch in s:
     if ch in ('-', '+', ' '):
         if buffer != '':

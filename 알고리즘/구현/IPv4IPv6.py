@@ -1,4 +1,13 @@
 
+import ipaddress
+
+def validateAddress(n, li):
+    for i in range(n):
+        try:
+            ip = ipaddress.ip_address(li[i])
+            print('IPv%s' % (ip.version))
+        except ValueError:
+            print('어느 것도 아니다')
 
 def validateAddress(n, li):
 
