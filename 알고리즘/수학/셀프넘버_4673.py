@@ -6,7 +6,7 @@ def selfnum(n, check):
         n = int(n / 10)
 
     if result <= 10000:
-        check[result-1] = False
+        check[result-1] = False # 수정
 
 
 
