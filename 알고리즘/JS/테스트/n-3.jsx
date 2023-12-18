@@ -15,7 +15,9 @@ function ImageGallery({ images }) {
                     if (entry.isIntersecting) {
                         const lazyImage = entry.target;
                         lazyImage.src = lazyImage.dataset.src; // 실제 이미지 경로로 src를 설정
+
                         setLoadedImages(prev => [...prev, lazyImage.dataset.src]);
+                        
                         observer.unobserve(lazyImage); // 이미지가 로드되면 관찰을 중단
                     }
                 });
